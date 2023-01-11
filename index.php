@@ -57,15 +57,15 @@
                     <hr>
                     <div class="mb-3">
                         <label for="taskname" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="taskname" name="name">
+                        <input type="text" class="form-control" id="name" name="name">
                     </div>
                     <div class="mb-3">
                         <label for="task_description" class="form-label">Description</label>
-                        <input type="text" class="form-control" id="task_description" name="description">
+                        <input type="text" class="form-control" id="description" name="description">
                     </div>
                     <div class="mb-3">
                     <label for="task_status" class="form-label">Status</label>
-                    <select class="form-control" id="task_status" name="status">
+                    <select class="form-control" id="status" name="status">
                         <option value="True">True</option>
                         <option value="False">False</option>
                     </select>
@@ -73,6 +73,33 @@
                     <button type="submit" class="btn btn-primary">Create New Task</button>
                 </form>
                 <hr>
+
+                <form method="GET" action="server/updatetask.php">
+                    <span><strong>Update Task</strong></span>
+                    <hr>
+                    <div class="mb-3">
+                    <select class="form-control" id="id" name="id">
+                        <option value="id">True</option>
+                        <option value="id">False</option>
+                    </div>
+                    <div class="mt-5">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="mb-3">
+                     <label for="description" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="description" name="description">
+                    </div>
+                    <div class="mb-3">
+                    
+                    <label for="task_status" class="form-label">Status</label>
+                    <select class="form-control" id="status" name="status">
+                        <option value="True">True</option>
+                        <option value="False">False</option>
+                    </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update</button>
+
                 
             </div>
         </div>
