@@ -74,7 +74,7 @@
                 </form>
                 <hr>
 
-                <form method="GET" action="server/updatetask.php">
+                <form method="POST" action="server/updatetask.php">
                     <span><strong>Update Task</strong></span>
                     <hr>
                     <div class="mb-3">
